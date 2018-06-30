@@ -1,28 +1,17 @@
-const moviesList = (state = {data: []}, action) => {
+const productsList = (state = {data: []}, action) => {
     switch (action.type) {
-        case 'UPDATE_MOVIES_LIST':
+        case 'UPDATE_PRODUCTS_LIST':
             return Object.assign({}, state, {
-                data: action.data
+                data: action.payload
             });
         default:
             return state;
     }
 };
 
-const movieItem = (state = {data: {}}, action) => {
-    switch (action.type) {
-        case 'UPDATE_MOVIE_ITEM':
-            return Object.assign({}, state, {
-                data: action.data
-            });
-        default:
-            return state;
-    }
-};
 
 const reducers = {
-    moviesList,
-    movieItem
+    productsList
 };
 
 export default reducers;

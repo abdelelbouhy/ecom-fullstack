@@ -1,13 +1,6 @@
-export const updateList = (data) => {
-	return {
-		type: 'UPDATE_MOVIES_LIST',
-		data
-	};
-};
-
-export const updateItem = (data) => {
-	return {
-		type: 'UPDATE_MOVIE_ITEM',
-		data
-	};
+export const updateProductsList = (payload) => {
+    return {
+        type: 'UPDATE_PRODUCTS_LIST',
+        payload
+    };
 };

@@ -10,7 +10,21 @@ import { match, RouterContext } from 'react-router';
 import { renderToString } from 'react-dom/server';
 
 import api from '../api';
+
+import {createStore, combineReducers} from 'redux';
+import {Provider} from 'react-redux';
+import {routerReducer} from 'react-router-redux';
+import reducers from '../redux/reducers';
 import routes from '../routes';
+
+
+const store = createStore(
+    combineReducers({
+        ...reducers,
+        routing: routerReducer
+    })
+);
+
 
 const ONE_YEAR_IN_MILLIS = 31557600000;
 const APP_PORT_NUM = process.env.PORT || 3000;
@@ -57,6 +71,7 @@ app.use('/dist', express.static(path.resolve(__dirname, '../../dist/'), { maxAge
 /**
  * View engine Handlebars
  * */
+
 app.set('view engine', 'hbs');
 app.engine('hbs', handlebars({
     extname:'.hbs',
@@ -80,7 +95,7 @@ app.get('*', (req, res) => {
             res.redirect(302, redirect.pathname + redirect.search);
         } else if (props) {
             res.status(200);
-            res.render('index', { reactOutput: renderToString(<RouterContext {...props} />) });
+            res.render('index', { reactOutput: renderToString(<Provider store={store}><RouterContext {...props} /></Provider>) });
         }
     });
 });
