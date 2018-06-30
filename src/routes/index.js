@@ -1,6 +1,5 @@
 import React from 'react';
-import { Router, Route, hashHistory } from 'react-router';
-
+import {Router, Route, hashHistory} from 'react-router';
 import HomePage from '../views/HomePage';
 
 export default (
