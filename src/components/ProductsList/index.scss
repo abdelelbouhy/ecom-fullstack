@@ -1,7 +1,6 @@
 .products_list_wrapper {
   max-width: 1024px;
   display: flex;
-  flex-flow: wrap;
+  flex-wrap: wrap;
   margin: 0 auto;
-  background: red;
 }
