@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Component should render 1`] = `
+<div
+  className="product"
+>
+  <img
+    alt="Alt"
+    className="product-product_image"
+    src="dist/test.jpg"
+  />
+  <div
+    className="product-bestseller"
+  >
+    bestseller
+  </div>
+  <div
+    className="product-product_details"
+  >
+    <h1
+      className="product-product_details-title"
+    >
+      Test Title
+    </h1>
+    <div
+      className="product-product_details-description"
+    >
+      Description
+    </div>
+    <div
+      className="product-product_details-price_wrapper"
+    >
+      <span
+        className="product-product_details-price_wrapper-label"
+      >
+        PriceLabel
+      </span>
+      <span
+        className="product-product_details-price_wrapper-price"
+      >
+        1200.00
+      </span>
+    </div>
+  </div>
+  <div
+    className="product-shop_now"
+  >
+    Shop Now
+  </div>
+</div>
+`;

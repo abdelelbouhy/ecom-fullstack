@@ -10,13 +10,11 @@ import { match, RouterContext } from 'react-router';
 import { renderToString } from 'react-dom/server';
 
 import api from '../api';
-
 import {createStore, combineReducers} from 'redux';
 import {Provider} from 'react-redux';
 import {routerReducer} from 'react-router-redux';
 import reducers from '../redux/reducers';
 import routes from '../routes';
-
 
 const store = createStore(
     combineReducers({
@@ -25,10 +23,8 @@ const store = createStore(
     })
 );
 
-
 const ONE_YEAR_IN_MILLIS = 31557600000;
 const APP_PORT_NUM = process.env.PORT || 3000;
-
 const app = express();
 
 if (process.env.NODE_ENV === 'development') {

@@ -19,6 +19,9 @@
     "url": "https://github.com/photobox/ecom-fullstack-test/issues"
   },
   "jest": {
+    "setupFiles": [
+      "<rootDir>/testSetup.js"
+    ],
     "roots": [
       "./"
     ],
@@ -63,7 +66,6 @@
     "node-jsx": "^0.13.3",
     "offline-plugin": "^4.6.1",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
     "react-router": "^3.2.1",
     "react-router-dom": "^4.3.1",
@@ -89,8 +91,9 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^3.1.4",
     "css-loader": "^0.26.2",
-    "enzyme": "^2.9.1",
-    "enzyme-to-json": "^1.5.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "^3.16.1",
     "extract-text-webpack-plugin": "^2.0.0",
     "handlebars-loader": "^1.4.0",
@@ -105,7 +108,8 @@
     "postcss-smart-import": "^0.6.9",
     "precss": "^1.4.0",
     "prop-types": "^15.6.2",
-    "react-dom": "^15.6.1",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.3.2",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-test-renderer": "^15.6.1",
     "react-transform-hmr": "^1.0.4",

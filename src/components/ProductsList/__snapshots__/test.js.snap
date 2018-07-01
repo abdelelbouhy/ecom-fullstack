@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Products List Component should render 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <Connect(ProductsList)
+    0={
+      Object {
+        "description": "Description",
+        "image": Object {
+          "alt": "Alt",
+          "path": "/test.jpg",
+        },
+        "price": 1200,
+        "priceLabel": "PriceLabel",
+        "title": "Test Title",
+      }
+    }
+  >
+    <ProductsList
+      0={
+        Object {
+          "description": "Description",
+          "image": Object {
+            "alt": "Alt",
+            "path": "/test.jpg",
+          },
+          "price": 1200,
+          "priceLabel": "PriceLabel",
+          "title": "Test Title",
+        }
+      }
+      products={Array []}
+      updateProductsList={[Function]}
+    >
+      <div
+        className="products_list_wrapper"
+      />
+    </ProductsList>
+  </Connect(ProductsList)>
+</Provider>
+`;
