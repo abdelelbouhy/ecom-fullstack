@@ -47,10 +47,10 @@ yarn build:prod
 yarn serve
 ```
 
-``` bash
 ## Monorepo projects built with lerna
 
 # Main commands
+``` bash
 - Install lerna at the root dir
 npm i
 
