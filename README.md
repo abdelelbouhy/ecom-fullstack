@@ -46,3 +46,14 @@ yarn build:prod
 # Serve content from build folder
 yarn serve
 ```
+
+``` bash
+## Monorepo projects built with lerna
+
+# Main commands
+- Install lerna at the root dir
+npm i
+
+- Install dependencies
+lerna bootstrap
+```
