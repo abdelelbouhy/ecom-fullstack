@@ -47,9 +47,9 @@ yarn build:prod
 yarn serve
 ```
 
-## Monorepo projects built with lerna
+# Monorepo projects built with lerna
 
-# Main commands
+## Main commands
 ``` bash
 - Install lerna at the root dir
 npm i
