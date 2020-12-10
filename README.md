@@ -46,3 +46,29 @@ yarn build:prod
 # Serve content from build folder
 yarn serve
 ```
+
+# Monorepo projects built with lerna
+
+## Main commands
+``` bash
+- Install lerna at the root dir
+npm i
+
+- Install dependencies
+lerna bootstrap
+
+- Run all packages
+npm run start
+
+- Run Sustainability application
+npm run start:sustainability
+
+- Run Sustainability-backend only
+start:sustainability-backend
+
+- Run Sustainability-frontend only
+start:sustainability-fronend
+
+- Run Sustainability-functions only
+start:sustainability-functions
+```
